@@ -1,0 +1,54 @@
+.header {
+    height: 10vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% - 30px);
+    background-color: pink;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.header img {
+    height: 60%;
+    padding: 1vh;
+    aspect-ratio: 1;
+}
+
+#ttg {
+    background-color: rgb(192, 255, 246);
+}
+
+#tcc {
+    background-color: rgb(255, 59, 134);
+}
+
+#tnn {
+    background-color: rgb(65, 59, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 8vh;
+        gap: 15px;
+    }    
+
+    .header img {
+        padding: 5px;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        gap: 10px;
+    }
+
+    .header img {
+        height: 30px;
+        width: 30px;
+    }
+}

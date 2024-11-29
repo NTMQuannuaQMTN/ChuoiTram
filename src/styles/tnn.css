@@ -1,0 +1,74 @@
+.tnn {
+    position: relative;
+    width: 100%;
+}
+
+.tnn section {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 10vh;
+    width: 100%;
+    height: 90vh;
+}
+
+.tnn h1 {
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 10px #e60073, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
+}
+
+.tnn h2 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 10px #e60073, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
+}
+
+.tnn h3 {
+    color: black;
+    display: flex;
+    font-size: 40px;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.start {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: gray;
+}
+
+.about-us {
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .tnn section {
+        top: 8vh;
+        height: 82.2vh;
+    }
+
+    .tnn h1 {
+        font-size: 50px;
+    }
+
+    .tnn h2 {
+        margin-top: 13px;
+        font-size: 30px;
+    }
+
+    .tnn h3 {
+        font-size: 25px;
+    }
+}
