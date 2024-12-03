@@ -3,12 +3,13 @@
     padding-left: 15px;
     padding-right: 15px;
     width: calc(100% - 30px);
-    background-color: pink;
+    background-color: var(--xanhreu);
     display: flex;
     gap: 15px;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .header img {

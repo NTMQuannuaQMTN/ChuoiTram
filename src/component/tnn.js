@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/tnn.css";
 import "../index.css";
 import "../styles/header.css";
-import back from "../pics/back.svg";
+import back from "../pics/web/back.svg";
 
 export default function TNN({ option, setOption }) {
     const handleStationClick = (value) => {

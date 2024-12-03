@@ -4,44 +4,100 @@
 }
 
 .ttg h1 {
+    font-weight: 700;
+    text-align: center;
     font-size: 80px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    text-shadow: 0 0 10px #e60073, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
 }
 
-.ttg h2 {
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
-    text-shadow: 0 0 10px #e60073, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
-}
-
-.ttg h3 {
-    color: black;
-    display: flex;
-    font-size: 40px;
-    width: 100%;
-    height: 30%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-
-.start {
+.ttg .start {
     justify-content: center;
     align-items: center;
     color: white;
     background-color: gray;
 }
 
-.about-us {
-    align-items: center;
-    background-color: black;
-    color: white;
+.ttg h4 {
+    font-size: 25px;
+    margin: 10px;
+    width: 90vw;
+}
+
+.tongquan {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.tongquan div {
+    width: calc(30vw - 40px);
+    height: 100px;
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: var(--xanhnhat);
+    border-radius: 20px;
+}
+
+.tongquan div h3 {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.tongquan div p {
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.timelinecont {
+    width: 95vw;
+    padding-right: 5px;
+    margin-left: 5px;
+    overflow-x: scroll;
+    height: 225px;
+    scroll-snap-type: x mandatory;
+}
+
+.timeline {
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    gap: 2.5vw;
+}
+
+.timeline div {
+    width: calc(30vw - 40px);
+    padding: 20px;
+    height: 180px;
+    background-color: var(--xanhnhat);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px black;
+    scroll-snap-align: start;
+}
+
+.timeline div p {
+    width: 100%;
+    font-size: 20px;
+    height: 28px;
+    margin: 0;
+}
+
+.timeline div p span {
+    float: right;
+}
+
+.timeline div h3 {
+    font-size: 30px;
+    display: block;
+    height: 120px;
+    line-height: 40px;
+    font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
@@ -54,7 +110,54 @@
         font-size: 30px;
     }
 
-    .ttg h3 {
-        font-size: 25px;
+    .ttg h4 {
+        font-size: 20px;
+    }
+
+    .tongquan {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .tongquan div {
+        width: calc(90vw - 20px);
+        padding: 10px;
+        height: fit-content;
+    }
+
+    .tongquan div h3 {
+        font-size: 20px;
+    }
+
+    .tongquan div p {
+        font-size: 15px;
+    }
+
+    .timelinecont {
+        width: 90vw;
+    }
+
+    .timeline {
+        gap: 5vw;
+        padding-right: 10px;
+    }
+
+    .timeline div {
+        width: calc(90vw - 20px);
+        padding: 10px;
+        height: 130px;
+    }
+
+    .timeline div p {
+        font-size: 15px;
+        height: 20px;
+    }
+
+    .timeline div h3 {
+        height: 90px;
+        line-height: 25px;
+        font-size: 20px;
     }
 }
